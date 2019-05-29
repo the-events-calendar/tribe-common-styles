@@ -228,3 +228,49 @@
 	font-size: var(--font-size-1);
 	line-height: var(--line-height-0);
 }
+
+/* -----------------------------------------------------------------------------
+ * Anchor - Default
+ * ----------------------------------------------------------------------------- */
+
+@define-mixin anchor-default {
+	border-bottom: 2px solid transparent;
+	transition: var(--transition-border-color);
+
+	&:active,
+	&:focus,
+	&:hover {
+		border-bottom: 2px solid var(--color-text-primary);
+	}
+}
+
+/* -----------------------------------------------------------------------------
+ * Anchor - Alt
+ * ----------------------------------------------------------------------------- */
+
+@define-mixin anchor-alt {
+	border-bottom: 2px solid var(--color-accent-primary);
+	transition: var(--transition-color);
+
+	&:active,
+	&:focus,
+	&:hover {
+		border-bottom: 2px solid var(--color-accent-primary);
+		color: var(--color-accent-primary);
+	}
+}
+
+/* -----------------------------------------------------------------------------
+ * Anchor - Thin
+ * ----------------------------------------------------------------------------- */
+
+@define-mixin anchor-thin {
+	border-bottom: 1px solid transparent;
+	transition: var(--transition-border-color);
+
+	&:active,
+	&:focus,
+	&:hover {
+		border-bottom: 1px solid var(--color-text-primary);
+	}
+}
