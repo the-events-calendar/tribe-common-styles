@@ -4,7 +4,6 @@
 
 @define-mixin button-global {
 	border: 0;
-	border-radius: 4px;
 	cursor: pointer;
 	display: inline-block;
 	height: auto;
@@ -24,6 +23,14 @@
 	color: var(--color-background);
 	text-align: center;
 	transition: var(--transition-background-color);
+}
+
+/* -----------------------------------------------------------------------------
+ * Button - Rounded
+ * ----------------------------------------------------------------------------- */
+
+@define-mixin button-rounded {
+	border-radius: 4px;
 }
 
 /* -----------------------------------------------------------------------------
