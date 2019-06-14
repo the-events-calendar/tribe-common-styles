@@ -13,19 +13,6 @@
 }
 
 /* -----------------------------------------------------------------------------
- * Button - Solid
- * ----------------------------------------------------------------------------- */
-
-@define-mixin button-solid {
-	@mixin desktop-body-2-bold;
-	@mixin button-global;
-
-	color: var(--color-background);
-	text-align: center;
-	transition: var(--transition-background-color);
-}
-
-/* -----------------------------------------------------------------------------
  * Button - Rounded
  * ----------------------------------------------------------------------------- */
 
@@ -34,11 +21,26 @@
 }
 
 /* -----------------------------------------------------------------------------
+ * Button - Solid
+ * ----------------------------------------------------------------------------- */
+
+@define-mixin button-solid {
+	@mixin desktop-body-2-bold;
+	@mixin button-global;
+	@mixin button-rounded;
+
+	color: var(--color-background);
+	text-align: center;
+	transition: var(--transition-background-color);
+}
+
+/* -----------------------------------------------------------------------------
  * Button - Border
  * ----------------------------------------------------------------------------- */
 
 @define-mixin button-border {
 	@mixin button-global;
+	@mixin button-rounded;
 
 	border: 1px solid var(--color-border-default);
 	transition: var(--transition-color-border-color);
