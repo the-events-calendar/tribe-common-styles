@@ -13,22 +13,14 @@
 }
 
 /* -----------------------------------------------------------------------------
- * Button - Rounded
- * ----------------------------------------------------------------------------- */
-
-@define-mixin button-rounded {
-	border-radius: 4px;
-}
-
-/* -----------------------------------------------------------------------------
  * Button - Solid
  * ----------------------------------------------------------------------------- */
 
 @define-mixin button-solid {
 	@mixin desktop-body-2-bold;
 	@mixin button-global;
-	@mixin button-rounded;
 
+	border-radius: 4px;
 	color: var(--color-background);
 	text-align: center;
 	transition: var(--transition-background-color);
@@ -40,9 +32,9 @@
 
 @define-mixin button-border {
 	@mixin button-global;
-	@mixin button-rounded;
 
 	border: 1px solid var(--color-border-default);
+	border-radius: 4px;
 	transition: var(--transition-color-border-color);
 
 	&:active {
