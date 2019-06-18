@@ -179,6 +179,38 @@
 }
 
 /* -----------------------------------------------------------------------------
+ * SVG - Location
+ * ----------------------------------------------------------------------------- */
+
+@svg-load location url('../icons/location.svg') {
+
+	path {
+		fill: var(--color-icon-primary);
+	}
+}
+
+@svg-load location-active url('../icons/location.svg') {
+
+	path {
+		fill: var(--color-icon-active);
+	}
+}
+
+@svg-load location-disabled url('../icons/location.svg') {
+
+	path {
+		fill: var(--color-icon-disabled);
+	}
+}
+
+@svg-load location-focus url('../icons/location.svg') {
+
+	path {
+		fill: var(--color-icon-focus);
+	}
+}
+
+/* -----------------------------------------------------------------------------
  * SVG - Map
  * ----------------------------------------------------------------------------- */
 
@@ -223,6 +255,31 @@
 }
 
 /* -----------------------------------------------------------------------------
+ * SVG - Reset
+ * ----------------------------------------------------------------------------- */
+
+@svg-load reset url('../icons/reset.svg') {
+
+	path {
+		fill: var(--color-icon-primary);
+	}
+}
+
+@svg-load reset-active url('../icons/reset.svg') {
+
+	path {
+		fill: var(--color-icon-active);
+	}
+}
+
+@svg-load reset-disabled url('../icons/reset.svg') {
+
+	path {
+		fill: var(--color-icon-disabled);
+	}
+}
+
+/* -----------------------------------------------------------------------------
  * SVG - Search
  * ----------------------------------------------------------------------------- */
 
@@ -247,6 +304,24 @@
 	}
 }
 
+@svg-load search-focus url('../icons/search.svg') {
+
+	path {
+		fill: var(--color-icon-focus);
+	}
+}
+
+/* -----------------------------------------------------------------------------
+ * SVG - Search Filter
+ * ----------------------------------------------------------------------------- */
+
+@svg-load search-filter url('../icons/search-filter.svg') {
+
+	path {
+		fill: var(--color-icon-active);
+	}
+}
+
 /* -----------------------------------------------------------------------------
  * SVG - Week
  * ----------------------------------------------------------------------------- */
@@ -255,5 +330,30 @@
 
 	path {
 		fill: var(--color-icon-active);
+	}
+}
+
+/* -----------------------------------------------------------------------------
+ * SVG - Search
+ * ----------------------------------------------------------------------------- */
+
+@svg-load search url('../icons/search.svg') {
+
+	path {
+		fill: var(--color-icon-primary);
+	}
+}
+
+@svg-load search-active url('../icons/search.svg') {
+
+	path {
+		fill: var(--color-icon-active);
+	}
+}
+
+@svg-load search-disabled url('../icons/search.svg') {
+
+	path {
+		fill: var(--color-icon-disabled);
 	}
 }
