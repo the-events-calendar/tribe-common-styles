@@ -153,7 +153,10 @@
 @svg-load filters url('../icons/filters.svg') {
 
 	path {
-		fill: var(--color-icon-primary);
+		stroke: var(--color-icon-primary);
+	}
+
+	circle {
 		stroke: var(--color-icon-primary);
 	}
 }
@@ -161,7 +164,10 @@
 @svg-load filters-active url('../icons/filters.svg') {
 
 	path {
-		fill: var(--color-icon-active);
+		stroke: var(--color-icon-active);
+	}
+
+	circle {
 		stroke: var(--color-icon-active);
 	}
 }
@@ -169,7 +175,10 @@
 @svg-load filters-disabled url('../icons/filters.svg') {
 
 	path {
-		fill: var(--color-icon-disabled);
+		stroke: var(--color-icon-disabled);
+	}
+
+	circle {
 		stroke: var(--color-icon-disabled);
 	}
 }
@@ -182,6 +191,38 @@
 
 	path {
 		fill: var(--color-icon-active);
+	}
+}
+
+/* -----------------------------------------------------------------------------
+ * SVG - Location
+ * ----------------------------------------------------------------------------- */
+
+@svg-load location url('../icons/location.svg') {
+
+	path {
+		fill: var(--color-icon-primary);
+	}
+}
+
+@svg-load location-active url('../icons/location.svg') {
+
+	path {
+		fill: var(--color-icon-active);
+	}
+}
+
+@svg-load location-disabled url('../icons/location.svg') {
+
+	path {
+		fill: var(--color-icon-disabled);
+	}
+}
+
+@svg-load location-focus url('../icons/location.svg') {
+
+	path {
+		fill: var(--color-icon-focus);
 	}
 }
 
@@ -230,6 +271,31 @@
 }
 
 /* -----------------------------------------------------------------------------
+ * SVG - Reset
+ * ----------------------------------------------------------------------------- */
+
+@svg-load reset url('../icons/reset.svg') {
+
+	path {
+		stroke: var(--color-icon-primary);
+	}
+}
+
+@svg-load reset-active url('../icons/reset.svg') {
+
+	path {
+		stroke: var(--color-icon-active);
+	}
+}
+
+@svg-load reset-disabled url('../icons/reset.svg') {
+
+	path {
+		stroke: var(--color-icon-disabled);
+	}
+}
+
+/* -----------------------------------------------------------------------------
  * SVG - Search
  * ----------------------------------------------------------------------------- */
 
@@ -251,6 +317,28 @@
 
 	path {
 		fill: var(--color-icon-disabled);
+	}
+}
+
+@svg-load search-focus url('../icons/search.svg') {
+
+	path {
+		fill: var(--color-icon-focus);
+	}
+}
+
+/* -----------------------------------------------------------------------------
+ * SVG - Search Filter
+ * ----------------------------------------------------------------------------- */
+
+@svg-load search-filter url('../icons/search-filter.svg') {
+
+	path {
+		fill: var(--color-icon-active);
+	}
+
+	circle {
+		stroke: var(--color-icon-active);
 	}
 }
 
