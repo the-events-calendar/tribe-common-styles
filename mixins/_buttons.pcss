@@ -33,6 +33,7 @@
 @define-mixin button-border {
 	@mixin button-global;
 
+	background-color: var(--color-background);
 	border: 1px solid var(--color-border-default);
 	border-radius: var(--border-radius-default);
 	transition: var(--transition-color-border-color);
@@ -47,6 +48,7 @@
  * ----------------------------------------------------------------------------- */
 
 @define-mixin button-icon-border {
+	background-color: var(--color-background);
 	border: 1px solid var(--color-border-default);
 	align-items: center;
 	display: inline-flex;
