@@ -31,11 +31,19 @@
  * ----------------------------------------------------------------------------- */
 
 @define-mixin button-border {
+	@mixin desktop-body-3;
 	@mixin button-global;
 
+	background-color: var(--color-background);
 	border: 1px solid var(--color-border-default);
 	border-radius: var(--border-radius-default);
+	text-align: center;
 	transition: var(--transition-color-border-color);
+
+	&:hover,
+	&:focus {
+		background-color: var(--color-background);
+	}
 
 	&:active {
 		border-color: var(--color-border-active);
@@ -47,6 +55,7 @@
  * ----------------------------------------------------------------------------- */
 
 @define-mixin button-icon-border {
+	background-color: var(--color-background);
 	border: 1px solid var(--color-border-default);
 	align-items: center;
 	display: inline-flex;
@@ -54,6 +63,11 @@
 	justify-content: center;
 	transition: none;
 	width: 56px;
+
+	&:hover,
+	&:focus {
+		background-color: var(--color-background);
+	}
 
 	&:active {
 		border-color: var(--color-border-active);
