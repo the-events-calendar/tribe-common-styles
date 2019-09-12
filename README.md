@@ -59,5 +59,5 @@ You will need to include this package as a submodule to your plugin/project. To 
 To simply install the package in your project use:
 
 ```bash
-git submodule update --init
+git submodule update --recursive --init
 ```
