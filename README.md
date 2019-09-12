@@ -48,37 +48,16 @@ Deletions should also be done carefully, for the same reasons as **Alterations**
 
 ## Installation
 
-You probably will need to install this package in a custom paths, say `src/resources/postcss/utilities`; if that's the case then add this to the plugin/project `composer.json` file:
+You will need to include this package as a submodule to your plugin/project. To install this in in a custom path, in this case `src/resources/postcss/utilities`, add the following to your `.gitmodules` file:
 
-```json
-  "repositories": [
-    {
-      "name": "moderntribe/tribe-common-styles",
-      "type": "github",
-      "url": "https://github.com/moderntribe/tribe-common-styles",
-      "no-api": true
-    }
-  ],
-  "extra": {
-    "installer-paths": {
-      "src/resources/postcss/utilities": [
-        "moderntribe/tribe-common-styles"
-      ]
-    }
-  }
 ```
+[submodule "src/resources/postcss/utilities"]
+	path = src/resources/postcss/utilities
+	url = git@github.com:moderntribe/tribe-common-styles.git
+```
+
 To simply install the package in your project use:
 
 ```bash
-composer require --dev moderntribe/tribe-common-styles
+git submodule update --init
 ```
-
-## Source installation
-
-If you need to work on **this** package while working on your project you will want to clone the full Git repository, just follow the instructions above and, in place of the command above, use:
-
-```bash
-composer require --dev moderntribe/tribe-common-styles --prefer-source
-```
-
-Remember to ignore the package installation folder to avoid committing a dirty repository!
