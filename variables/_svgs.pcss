@@ -125,26 +125,6 @@
 }
 
 /* -----------------------------------------------------------------------------
- * SVG - Remove
- * ----------------------------------------------------------------------------- */
-
-@svg-load remove url('../icons/remove.svg') {
-
-	path {
-		fill: var(--color-icon-secondary);
-		stroke: var(--color-icon-secondary);
-	}
-}
-
-@svg-load remove-secondary url('../icons/remove.svg') {
-
-	path {
-		fill: var(--color-icon-primary);
-		stroke: var(--color-icon-primary);
-	}
-}
-
-/* -----------------------------------------------------------------------------
  * SVG - Day
  * ----------------------------------------------------------------------------- */
 
@@ -163,6 +143,17 @@
 
 	path {
 		fill: var(--color-icon-primary);
+	}
+}
+
+/* -----------------------------------------------------------------------------
+ * SVG - Error
+ * ----------------------------------------------------------------------------- */
+
+@svg-load error url('../icons/error.svg') {
+
+	path {
+		fill: var(--color-icon-active);
 	}
 }
 
@@ -305,6 +296,26 @@
 
 	path {
 		fill: var(--color-accent-primary);
+	}
+}
+
+/* -----------------------------------------------------------------------------
+ * SVG - Remove
+ * ----------------------------------------------------------------------------- */
+
+@svg-load remove url('../icons/remove.svg') {
+
+	circle,
+	path {
+		stroke: var(--color-icon-primary);
+	}
+}
+
+@svg-load remove-secondary url('../icons/remove.svg') {
+
+	circle,
+	path {
+		stroke: var(--color-icon-secondary);
 	}
 }
 
