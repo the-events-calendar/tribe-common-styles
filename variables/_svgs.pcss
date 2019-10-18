@@ -24,10 +24,10 @@
 }
 
 /* -----------------------------------------------------------------------------
- * SVG - Arrow Left
+ * SVG - Arrow (light, left)
  * ----------------------------------------------------------------------------- */
 
-@svg-load arrow-left url('../icons/arrow.svg') {
+@svg-load arrow url('../icons/arrow.svg') {
 
 	path {
 		fill: var(--color-icon-primary);
@@ -135,14 +135,14 @@
  * SVG - Close
  * ----------------------------------------------------------------------------- */
 
-@svg-load close url('../icons/close.svg') {
+@svg-load @svg-load close-secondary url('../icons/close.svg') {
 
 	path {
 		stroke: var(--color-icon-secondary);
 	}
 }
 
-@svg-load close-secondary url('../icons/close.svg') {
+@svg-load close url('../icons/close.svg') {
 
 	path {
 		stroke: var(--color-icon-primary);
@@ -175,7 +175,7 @@
  * SVG - Error
  * ----------------------------------------------------------------------------- */
 
-@svg-load error url('../icons/error.svg') {
+@svg-load error-active url('../icons/error.svg') {
 
 	path {
 		fill: var(--color-icon-active);
