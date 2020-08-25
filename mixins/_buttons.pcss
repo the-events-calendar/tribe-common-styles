@@ -50,6 +50,21 @@
  * ----------------------------------------------------------------------------- */
 
 @define-mixin button-border {
+	@mixin desktop-body-2-bold;
+	@mixin button-global;
+
+	background-color: var(--color-background);
+	border: 1px solid var(--color-accent-primary);
+	border-radius: var(--border-radius-default);
+	text-align: center;
+	transition: var(--transition);
+}
+
+/* -----------------------------------------------------------------------------
+ * Button - Border Small
+ * ----------------------------------------------------------------------------- */
+
+@define-mixin button-border-small {
 	@mixin desktop-body-3;
 	@mixin button-global;
 
