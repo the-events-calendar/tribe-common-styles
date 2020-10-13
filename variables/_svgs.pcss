@@ -256,6 +256,26 @@
 }
 
 /* -----------------------------------------------------------------------------
+ * SVG - Guest
+ * ----------------------------------------------------------------------------- */
+
+ @svg-load guest-active url('../icons/guest.svg') {
+
+	path {
+		fill: var(--color-icon-active);
+		stroke: var(--color-icon-active);
+	}
+}
+
+@svg-load guest-disabled url('../icons/guest.svg') {
+
+	path {
+		fill: var(--color-icon-disabled);
+		stroke: var(--color-icon-disabled);
+	}
+}
+
+/* -----------------------------------------------------------------------------
  * SVG - List
  * ----------------------------------------------------------------------------- */
 
@@ -355,11 +375,21 @@
 @svg-load no-map url('../icons/no-map.svg') {}
 
 /* -----------------------------------------------------------------------------
+ * SVG - Paper Plane
+ * ----------------------------------------------------------------------------- */
+
+ @svg-load paper-plane-active url('../icons/paper-plane.svg') {
+
+	path {
+		stroke: var(--color-icon-active);
+	}
+}
+
+/* -----------------------------------------------------------------------------
  * SVG - Phone
  * ----------------------------------------------------------------------------- */
 
 @svg-load phone-active url('../icons/phone.svg') {
-
 	path {
 		stroke: var(--color-icon-active);
 	}
