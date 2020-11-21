@@ -58,8 +58,11 @@ jobs:
           GITHUB_USER: tr1b0t
           GITHUB_OAUTH_TOKEN: ${{ secrets.GH_BOT_TOKEN }}
 
+      - name: Create temp clone directory
+        shell: bash
+        run: mkdir clone
+
       - name: Synchronize submodules
         shell: bash
         run: |
-          cd tut && ./tut submodule-sync --branch=${{ steps.extract_branch.outputs.branch }}
-
+          cd tut && ./tut submodule-sync --branch=${{ steps.extract_branch.outputs.branch }} --tmp-dir=${GITHUB_WORKSPACE}/clone
