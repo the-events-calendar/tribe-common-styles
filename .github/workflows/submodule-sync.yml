@@ -60,7 +60,7 @@ jobs:
 
       - name: Create temp clone directory
         shell: bash
-        run: mkdir clone
+        run: mkdir ${GITHUB_WORKSPACE}/clone
 
       - name: Synchronize submodules
         shell: bash
