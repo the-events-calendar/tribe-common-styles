@@ -1,6 +1,6 @@
 {
-    "name": "moderntribe/tribe-common-styles",
-    "description": "A library of Modern Tribe's common styles",
+    "name": "the-events-calendar/tribe-common-styles",
+    "description": "A library of The Events Calendar's common styles",
     "type": "wordpress-plugin",
     "license": "Private",
     "require": {
