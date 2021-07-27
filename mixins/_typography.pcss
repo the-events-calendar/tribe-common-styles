@@ -298,6 +298,9 @@
 	}
 }
 
+/* -----------------------------------------------------------------------------
+ * Anchor - Event Title
+ * ----------------------------------------------------------------------------- */
 @define-mixin event-title-link {
 	color: var(--tec-color-text-events-title);
 
@@ -305,7 +308,12 @@
 	&:focus,
 	&:hover,
 	&:visited {
-		border-color: currentColor;
 		color: var(--tec-color-text-events-title);
+	}
+
+	&:active,
+	&:focus,
+	&:hover {
+		border-color: currentColor;
 	}
 }
