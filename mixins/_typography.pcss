@@ -300,8 +300,11 @@
 
 /* -----------------------------------------------------------------------------
  * Anchor - Event Title
+ *
+ * This mixin intentionally only affects the text and border _colors_
+ * to make sure they all follow the Customizer overrides.
  * ----------------------------------------------------------------------------- */
-@define-mixin event-title-link {
+@define-mixin event-title-link-color {
 	color: var(--tec-color-text-events-title);
 
 	&:active,
