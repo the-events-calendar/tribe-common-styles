@@ -302,24 +302,24 @@
 /* -----------------------------------------------------------------------------
  * Anchor - Event Title
  *
- * This mixin intentionally only affects the text, border _colors_ and background
+ * This mixin intentionally only affects the text, border and background _colors_
  * to make sure they all follow the Customizer overrides.
  * ----------------------------------------------------------------------------- */
 @define-mixin event-title-link-color {
-	color: var(--tec-color-text-events-title);
 	background: transparent;
+	color: var(--tec-color-text-events-title);
 
 	&:active,
 	&:focus,
 	&:hover {
 		border-color: currentColor;
-		color: var(--tec-color-text-events-title);
 		background: transparent;
+		color: var(--tec-color-text-events-title);
 	}
 
 	&:visited {
-		color: var(--tec-color-text-events-title);
 		background: transparent;
+		color: var(--tec-color-text-events-title);
 	}
 }
 
@@ -329,7 +329,11 @@
  * This mixin intentionally only affects typography of the title
  * ----------------------------------------------------------------------------- */
 @define-mixin event-title-link {
+	background-color: transparent;
+	border: 0;
+	font-family: inherit;
 	font-size: inherit;
-	line-height: inherit;
 	letter-spacing: inherit;
+	line-height: inherit;
+	text-decoration: none;
 }

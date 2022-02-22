@@ -4,29 +4,20 @@
 
 @define-mixin button-global {
 	background: transparent;
-	border: 0;
 	border-radius: 0;
-	cursor: pointer;
+	border: 0;
 	color: inherit;
+	cursor: pointer;
 	display: inline-block;
 	height: auto;
+	outline: none;
 	padding: 0;
 	text-decoration: none;
-	outline: none;
 	width: auto;
 
 	&:focus,
-	&:hover {
-		background: transparent;
-		color: inherit;
-	}
-
+	&:hover,
 	&:active {
-		background: transparent;
-		color: inherit;
-	}
-
-	&:disabled {
 		background: transparent;
 		color: inherit;
 	}
