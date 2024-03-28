@@ -135,6 +135,7 @@
 	color: var(--tec-color-text-primary);
 	font-family: var(--tec-font-family-sans-serif);
 	font-weight: var(--tec-font-weight-bold);
+	text-transform: initial;
 }
 
 /* -----------------------------------------------------------------------------
@@ -301,20 +302,38 @@
 /* -----------------------------------------------------------------------------
  * Anchor - Event Title
  *
- * This mixin intentionally only affects the text and border _colors_
+ * This mixin intentionally only affects the text, border and background _colors_
  * to make sure they all follow the Customizer overrides.
  * ----------------------------------------------------------------------------- */
 @define-mixin event-title-link-color {
+	background: transparent;
 	color: var(--tec-color-text-events-title);
 
 	&:active,
 	&:focus,
 	&:hover {
+		background: transparent;
 		border-color: currentColor;
 		color: var(--tec-color-text-events-title);
 	}
 
 	&:visited {
+		background: transparent;
 		color: var(--tec-color-text-events-title);
 	}
+}
+
+/* -----------------------------------------------------------------------------
+ * Anchor - Event Title
+ *
+ * This mixin intentionally only affects typography of the title
+ * ----------------------------------------------------------------------------- */
+@define-mixin event-title-link {
+	background-color: transparent;
+	border: 0;
+	font-family: inherit;
+	font-size: inherit;
+	letter-spacing: inherit;
+	line-height: inherit;
+	text-decoration: none;
 }

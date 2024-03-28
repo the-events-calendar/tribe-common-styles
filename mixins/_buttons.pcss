@@ -3,13 +3,24 @@
  * ----------------------------------------------------------------------------- */
 
 @define-mixin button-global {
+	background: transparent;
+	border-radius: 0;
 	border: 0;
+	color: inherit;
 	cursor: pointer;
 	display: inline-block;
 	height: auto;
+	outline: none;
 	padding: 0;
 	text-decoration: none;
 	width: auto;
+
+	&:focus,
+	&:hover,
+	&:active {
+		background: transparent;
+		color: inherit;
+	}
 }
 
 /* -----------------------------------------------------------------------------
