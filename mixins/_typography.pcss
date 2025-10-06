@@ -239,13 +239,24 @@
  * ----------------------------------------------------------------------------- */
 
 @define-mixin anchor-default {
-	border-bottom: 2px solid transparent;
-	transition: var(--tec-transition-border-color);
+	text-decoration-color: currentColor;
+	text-decoration-line: underline;
+	text-decoration-skip-ink: auto;
+	text-decoration-thickness: 2px;
+	text-underline-offset: 2px;
+	transition: var(--tec-transition);
 
 	&:active,
-	&:focus,
 	&:hover {
-		border-bottom: 2px solid currentColor;
+		color: var(--tec-color-accent-primary);
+		text-decoration-color: var(--tec-color-accent-primary);
+	}
+
+	&:focus {
+		color: var(--tec-color-accent-primary);
+		outline: 2px solid var(--tec-color-accent-primary);
+		outline-offset: 2px;
+		text-decoration-color: var(--tec-color-accent-primary);
 	}
 }
 
@@ -254,15 +265,19 @@
  * ----------------------------------------------------------------------------- */
 
 @define-mixin anchor-alt {
-	border-bottom: 2px solid var(--tec-color-link-accent);
 	color: var(--tec-color-link-primary);
+	text-decoration-color: var(--tec-color-link-accent);
+	text-decoration-line: underline;
+	text-decoration-skip-ink: auto;
+	text-decoration-thickness: 2px;
+	text-underline-offset: 2px;
 	transition: var(--tec-transition-color);
 
 	&:active,
 	&:focus,
 	&:hover {
-		border-bottom: 2px solid currentColor;
 		color: var(--tec-color-link-accent);
+		text-decoration-color: currentColor;
 	}
 }
 
@@ -271,30 +286,45 @@
  * ----------------------------------------------------------------------------- */
 
 @define-mixin anchor-thin {
-	border-bottom: 1px solid transparent;
-	transition: var(--tec-transition-border-color);
+	text-decoration-color: currentColor;
+	text-decoration-line: underline;
+	text-decoration-skip-ink: auto;
+	text-decoration-thickness: 1px;
+	text-underline-offset: 2px;
+	transition: var(--tec-transition);
 
 	&:active,
-	&:focus,
 	&:hover {
-		border-bottom: 1px solid var(--tec-color-link-primary);
+		color: var(--tec-color-accent-primary);
+		text-decoration-color: var(--tec-color-accent-primary);
+	}
+
+	&:focus {
+		color: var(--tec-color-accent-primary);
+		outline: 2px solid var(--tec-color-accent-primary);
+		outline-offset: 2px;
+		text-decoration-color: var(--tec-color-accent-primary);
 	}
 }
 
 /* -----------------------------------------------------------------------------
- * Anchor - Thin
+ * Anchor - Thin Alt
  * ----------------------------------------------------------------------------- */
 
 @define-mixin anchor-thin-alt {
-	border-bottom: 1px solid var(--tec-color-link-accent);
 	color: var(--tec-color-link-primary);
+	text-decoration-color: var(--tec-color-link-accent);
+	text-decoration-line: underline;
+	text-decoration-skip-ink: auto;
+	text-decoration-thickness: 1px;
+	text-underline-offset: 2px;
 	transition: var(--tec-transition-color);
 
 	&:active,
 	&:focus,
 	&:hover {
-		border-bottom: 1px solid currentColor;
 		color: var(--tec-color-link-accent);
+		text-decoration-color: currentColor;
 	}
 }
 
