@@ -1,8 +1,16 @@
 :root {
 	/* -----------------------------------------------------------------------------
-	 * Outlines - Active/Focus
+	 * Outlines – tokens
 	 * ----------------------------------------------------------------------------- */
 
-	--tec-outline-active-default: 2px solid var(--tec-color-border-active, #1a202c);
+	/* Base pieces. */
+	--tec-outline-width-default: 2px;
+	--tec-outline-style-default: solid;
+	--tec-outline-color-default: var(--tec-color-border-active, #1a202c);
 	--tec-outline-offset-default: 2px;
+
+	/* Composed shorthand. */
+	--tec-outline-active-default: var(--tec-outline-width-default)
+		var(--tec-outline-style-default)
+		var(--tec-outline-color-default);
 }
